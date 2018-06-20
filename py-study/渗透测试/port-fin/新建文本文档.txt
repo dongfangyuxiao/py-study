@@ -1,0 +1,17 @@
+运行完成上个infogo.py
+
+目录下会生成响应的文件
+
+再运行python  port-scan.py
+
+这个脚本的作用很简单
+
+1、调用masscan进行C段扫描，在/root/project/info/port发现开放端口，生成 1.1.1.1:80
+ 的格式的port-scan.txt，
+
+2、对上面的端口探测，进行http探测，就是发现能够通过http协议访问的url
+生成的 http.txt 就是可以通过http或https协议访问的文件
+
+3、调用whatweb进行指纹识别，生成whatweb.json
+
+然后，单线程，500个ip，每个ip扫描一万个端口，大概半小时，后续会不断改进
