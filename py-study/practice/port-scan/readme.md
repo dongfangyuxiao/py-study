@@ -1,0 +1,4 @@
+写了两个脚本
+1个使用socket模块进行tcp端口探测
+1个使用python-nmap模块进行端口扫描
+总的来说，更喜欢masscan，扫得快
