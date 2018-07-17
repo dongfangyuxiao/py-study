@@ -16,12 +16,7 @@ __github__ = 'https://github.com/dongfangyuxiao/'
 # @Site    :
 # @File    : code_dis.py
 # @Software: PyCharm
-# 开源代码网站代码泄露排查工具
-# 工具的作用就是从开源代码网站，目前已集成github、码云、thinksaas、codeproject、oschina、svnchina六大主流开源网站，后续如果有其他的，还可以不断添加
-#最后呢，就是增加了一个其他的工具 gitprey ，个人感觉gitprey比GSIL要好用
-#keyword.txt 是关键字，支持中英文，code_dis.txt是最后所有的发现
-#缺陷，1.0版本目前多线程还不熟练，github的会搜索两遍，有时间就会再修改，没时间，只好算了，哈哈
-#参考 https://github.com/bit4woo/teemo   https://github.com/repoog/GitPrey
+#
 __author__ = 'xiaodong'
 __github__ = 'https://github.com/dongfangyuxiao/'
 
