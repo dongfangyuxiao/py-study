@@ -1,0 +1,23 @@
+#提取https://phpinfo.me/domain/的子域名查询的功能，把这个网站在线子域名查找的所有子域名前缀提取出来，然后和sublist3r的字典合在一起，去重
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+
+import re
+
+def extrac_domain():
+    result = ""
+    f= open('test.txt','rb')
+    domain_pattern = re.compile('domain=baidu.com&q=(.*?) HTTP')
+    for line in f.readlines():
+        result +=line
+
+    domains = domain_pattern.findall(result)
+    for x in domains:
+        write(x)
+
+def write(line):
+    f = open('ok.txt','a+')
+    f.write(line+'\n')
+
+if __name__ == "__main__":
+    extrac_domain()
